@@ -1,0 +1,109 @@
+.navbar{
+    width: 100vw;
+    height: 70px;
+    background-color: var(--secondary-bg);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: var(--font);
+    z-index: 1111111;
+}
+.navbarSmall{
+    width: 100vw;
+    height: 110px;
+    background-color: var(--secondary-bg);
+    position: fixed;
+    inset: 0;
+    padding: 0 10px;
+    color: var(--font);
+    display: none;
+    z-index: 11111111;
+}
+.inner-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.smallLinks{
+    width: 100%;
+    margin: 10px 0;
+}
+.smallLinks .navLinkContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navLinkContainer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navLink{
+    list-style-type: none;
+    position: relative;
+}
+.badge{
+    position: absolute;
+    background-color: crimson;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    right: -10px;
+    top: -10px;
+    font-family: interSemiBold;
+}
+.navLink a{
+    color: var(--font);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.navLink a.active{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.actionArea{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+.username{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-family: interSemiBold;
+}
+
+@media (max-width:500px){
+    .navbar{
+        display: none;
+    }
+    .navbarSmall{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

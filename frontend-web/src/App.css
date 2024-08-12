@@ -1,0 +1,14 @@
+.contentArea{
+    margin-top: 70px;
+    padding: 20px;
+}
+
+
+
+
+@media (max-width:500px) {
+    .contentArea{
+        margin-top: 110px;
+        padding: 10px;
+    }
+}

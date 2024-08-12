@@ -1,0 +1,56 @@
+@font-face {
+  font-family: interRegular;
+  src: url('./assets/fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: interMedium;
+  src: url('./assets/fonts/Inter-Medium.ttf');
+}
+
+@font-face {
+  font-family: interSemiBold;
+  src: url('./assets/fonts/Inter-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: interBold;
+  src: url('./assets/fonts/Inter-Bold.ttf');
+}
+
+@font-face {
+  font-family: interExtraBold;
+  src: url('./assets/fonts/Inter-ExtraBold.ttf');
+}
+:root {
+  --primary-bg: #d3ccc2;
+  --secondary-bg: #b06a00;
+  --card: #dfd8ce;
+  --text-input: #b06a00;
+  --font: #d3ccc2;
+  --font-sec: #341f00;
+  --favorite: #fb0f36;
+  --icon: #d3ccc2;
+  --btn-primary: #975b00;
+  --btn-secondary: #b36c00;
+  --shadow-md: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+
+}
+
+body {
+  font-family: interRegular;
+  background-color: var(--primary-bg);
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

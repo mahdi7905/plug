@@ -1,0 +1,42 @@
+.add-product-area{
+    flex: 1;
+    margin-bottom: 20px;
+}
+.form-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.add-pro-inp {
+    width: 80%;
+    padding: 10px 10px 10px 5px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid var(--btn-secondary);
+    color: var(--text-input);
+    font-size: 1.1rem;
+    font-family: interRegular;
+}
+
+.add-pro-inp::placeholder {
+    color: var(--text-input);
+    font-family: interRegular;
+}
+.add-pro-btn {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 0;
+    font-family: interBold;
+    cursor: pointer;
+    transition: transform .2s ease-in;
+    background-color: var(--btn-secondary);
+    color: var(--card);
+}
+.products{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
